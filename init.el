@@ -12,9 +12,11 @@
   ;; If there is more than one, they won't work right.
  )
 ;-------------------------------------------------------------------------------
-; Do not create backup files. Using Git after all...
+; My customizations
 ;-------------------------------------------------------------------------------
+; Do not create backup files, using Git after all...
 (setq make-backup-files nil)
+
 ;-------------------------------------------------------------------------------
 ; Set up local package directory
 ;-------------------------------------------------------------------------------
