@@ -34,3 +34,5 @@ Install magit
 2. Use package.el packages
 3. Enable column-number-mode by default
 4. Enable IBuffer
+5. Whitespace line highlighting
+6. Highlight anything beyond 80 character columns
