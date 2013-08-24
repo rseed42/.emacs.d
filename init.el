@@ -34,3 +34,16 @@
 (package-initialize)
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
+
+;-------------------------------------------------------------------------------
+; JS Mode Configuration
+;-------------------------------------------------------------------------------
+(add-to-list 'load-path "~/.emacs.d")
+(require 'cl)
+(require 'compile)
+(load "js-config.el")
+(add-to-list 'load-path "~/.emacs.d/jade-mode") ;; github.com/brianc/jade-mode
+(require 'sws-mode)
+(require 'jade-mode)
+(add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
+(add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
