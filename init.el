@@ -26,6 +26,8 @@
 (require 'whitespace)
 (setq whitespace-style '(face empty tabs lines-tail trailing))
 (global-whitespace-mode t)
+; Enable ido mode (minibuffer autocomplete)
+(require 'ido)
 ;-------------------------------------------------------------------------------
 ; Set up local package directory
 ;-------------------------------------------------------------------------------
