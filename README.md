@@ -32,3 +32,4 @@ Install magit
 0. Do not display tips on startup
 1. Disable automatic backups
 2. Use package.el packages
+3. Enable column-number-mode by default

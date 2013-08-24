@@ -16,7 +16,8 @@
 ;-------------------------------------------------------------------------------
 ; Do not create backup files, using Git after all...
 (setq make-backup-files nil)
-
+; Display column number
+(setq line-number-mode t)
 ;-------------------------------------------------------------------------------
 ; Set up local package directory
 ;-------------------------------------------------------------------------------
