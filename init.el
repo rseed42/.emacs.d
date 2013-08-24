@@ -3,6 +3,8 @@
 ; Custom load paths
 ;-------------------------------------------------------------------------------
 (add-to-list 'load-path "~/.emacs.d/local/")
+(add-to-list 'load-path "~/.emacs.d/local/js")
+(add-to-list 'load-path "~/.emacs.d/local/js/jade-mode")
 ;-------------------------------------------------------------------------------
 ; Load the package manager package.el prior to anything else
 ;-------------------------------------------------------------------------------
@@ -77,12 +79,10 @@
 ;-------------------------------------------------------------------------------
 ; JS Mode Configuration
 ;-------------------------------------------------------------------------------
-(add-to-list 'load-path "~/.emacs.d/local/js")
 (require 'cl)
 (require 'compile)
 (load "js-config.el")
 ;; github.com/brianc/jade-mode
-(add-to-list 'load-path "~/.emacs.d/local/js/jade-mode")
 (require 'sws-mode)
 (require 'jade-mode)
 (add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
