@@ -27,7 +27,6 @@ package.el (emacs <= 23)
 
 Customization List
 ------------------
-
 * Do not display tips on startup
 * Disable automatic backups
 * Use package.el packages
