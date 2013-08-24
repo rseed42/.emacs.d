@@ -17,11 +17,15 @@
 (global-whitespace-mode t)
 ; Enable ido mode (minibuffer autocomplete)
 (require 'ido)
-
+(ido-mode t)
+; Enable ansi color
+(require 'ansi-color)
 ;-------------------------------------------------------------------------------
 ; Set up local package directory
 ;-------------------------------------------------------------------------------
 (add-to-list 'load-path "~/.emacs.d/local/")
+; Enable smooth scrolling
+(require 'smooth-scrolling)
 ;-------------------------------------------------------------------------------
 ; Load the package manager package.el prior to anything else
 ;-------------------------------------------------------------------------------
