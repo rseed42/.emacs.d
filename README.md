@@ -1,6 +1,5 @@
 Configuration Notes
 ==============================
-
 First things first:
 
     ln -s ~/.emacs.d/init.el ~/.emacs
