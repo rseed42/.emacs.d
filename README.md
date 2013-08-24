@@ -1,8 +1,12 @@
 Configuration Notes
 ==============================
-First things first:
 
-    ln -s ~/.emacs.d/init.el ~/.emacs
+System
+------
+All of these configuration have been tested on Debian (7) Wheezy stable, so that
+that is why I am not using the Emacs 24. Only packages that are not on the
+system have to be put in .emacs.d/local. The .emacs file is not necessary when
+we have init.el in .emacs.d.
 
 Layout
 ------
