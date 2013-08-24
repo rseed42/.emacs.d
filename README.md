@@ -33,3 +33,4 @@ Install magit
 1. Disable automatic backups
 2. Use package.el packages
 3. Enable column-number-mode by default
+4. Enable IBuffer
