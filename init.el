@@ -7,9 +7,10 @@
 (setq make-backup-files nil)
 ; Display column number
 (setq column-number-mode t)
-; IBuffer is pretty indispensable
+; IBuffer is pretty indispensable. Uniquify for sensible names.
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (autoload 'ibuffer "ibuffer" "List buffers." t)
+(require 'uniquify)
 ; Highlight lines that contain only white space characters
 ; Highlight anything beyond the 80 character column
 (require 'whitespace)
