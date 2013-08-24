@@ -17,7 +17,7 @@
 ; Do not create backup files, using Git after all...
 (setq make-backup-files nil)
 ; Display column number
-(setq line-number-mode t)
+(setq column-number-mode t)
 ; IBuffer is pretty indispensable
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (autoload 'ibuffer "ibuffer" "List buffers." t)
