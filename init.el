@@ -39,11 +39,12 @@
 ;-------------------------------------------------------------------------------
 ; JS Mode Configuration
 ;-------------------------------------------------------------------------------
-(add-to-list 'load-path "~/.emacs.d")
+(add-to-list 'load-path "~/.emacs.d/local/js")
 (require 'cl)
 (require 'compile)
 (load "js-config.el")
-(add-to-list 'load-path "~/.emacs.d/jade-mode") ;; github.com/brianc/jade-mode
+;; github.com/brianc/jade-mode
+(add-to-list 'load-path "~/.emacs.d/local/js/jade-mode")
 (require 'sws-mode)
 (require 'jade-mode)
 (add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
