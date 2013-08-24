@@ -1,5 +1,16 @@
 ; -*- mode: emacs-lisp -*-
 ;-------------------------------------------------------------------------------
+; Custom load paths
+;-------------------------------------------------------------------------------
+(add-to-list 'load-path "~/.emacs.d/local/")
+;-------------------------------------------------------------------------------
+; Load the package manager package.el prior to anything else
+;-------------------------------------------------------------------------------
+(require 'package)
+(package-initialize)
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/") t)
+;-------------------------------------------------------------------------------
 ; My customizations
 ;-------------------------------------------------------------------------------
 ; Do not show startup tips in XEmacs
@@ -22,6 +33,8 @@
 (ido-mode t)
 ; Enable ansi color
 (require 'ansi-color)
+; Smooth scrolling is waaaay better
+(require 'smooth-scrolling)
 ;-------------------------------------------------------------------------------
 ; Interface enhancement
 ;-------------------------------------------------------------------------------
@@ -47,7 +60,6 @@
 ;-------------------------------------------------------------------------------
 ; Better key bindings
 ;-------------------------------------------------------------------------------
-(add-to-list 'load-path "~/.emacs.d/local/")
 (load "defuns-config.el")
 (fset 'align-equals "\C-[xalign-regex\C-m=\C-m")
 (global-set-key "\M-=" 'align-equals)
@@ -62,16 +74,3 @@
 (global-set-key "\M-d" 'delete-word)
 (global-set-key "\M-h" 'backward-delete-word)
 (global-set-key "\M-u" 'zap-to-char)
-;-------------------------------------------------------------------------------
-; Set up local package directory
-;-------------------------------------------------------------------------------
-;(add-to-list 'load-path "~/.emacs.d/local/")
-; Enable smooth scrolling
-(require 'smooth-scrolling)
-;-------------------------------------------------------------------------------
-; Load the package manager package.el prior to anything else
-;-------------------------------------------------------------------------------
-(require 'package)
-(package-initialize)
-(add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/") t)
