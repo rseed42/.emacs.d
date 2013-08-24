@@ -1,19 +1,8 @@
-; Do not display tips on startup
-(custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- '(inhibit-startup-screen t))
-(custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- )
 ;-------------------------------------------------------------------------------
 ; My customizations
 ;-------------------------------------------------------------------------------
+; Do not show startup tips in XEmacs
+(setq inhibit-startup-message t)
 ; Do not create backup files, using Git after all...
 (setq make-backup-files nil)
 ; Display column number
@@ -28,6 +17,7 @@
 (global-whitespace-mode t)
 ; Enable ido mode (minibuffer autocomplete)
 (require 'ido)
+
 ;-------------------------------------------------------------------------------
 ; Set up local package directory
 ;-------------------------------------------------------------------------------
