@@ -35,6 +35,10 @@
 (require 'ansi-color)
 ; Smooth scrolling is waaaay better
 (require 'smooth-scrolling)
+; Disable automatic indentation of cc mode
+(require 'cc-mode)
+    (add-to-list 'c-mode-common-hook
+      (lambda () (setq c-syntactic-indentation nil)))
 ;-------------------------------------------------------------------------------
 ; Interface enhancement
 ;-------------------------------------------------------------------------------
