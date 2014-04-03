@@ -53,7 +53,7 @@
 (require 'compile)
 
 (menu-bar-mode -1)
-(normal-erase-is-backspace-mode 1)
+;(normal-erase-is-backspace-mode 1)
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
 (setq save-abbrevs nil)
@@ -102,9 +102,9 @@
 ;-------------------------------------------------------------------------------
 ; JS Mode Configuration
 ;-------------------------------------------------------------------------------
-;(load "js-config.el")
-;(add-to-list 'load-path "~/.emacs.d/jade-mode") ;; github.com/brianc/jade-mode
-;(require 'sws-mode)
-;(require 'jade-mode)
-;(add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
-;(add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
+(load "js-config.el")
+(add-to-list 'load-path "~/.emacs.d/jade-mode") ;; github.com/brianc/jade-mode
+(require 'sws-mode)
+(require 'jade-mode)
+(add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
+(add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
