@@ -3,6 +3,8 @@
 ; Custom load paths
 ;-------------------------------------------------------------------------------
 (add-to-list 'load-path "~/.emacs.d/local/")
+; Node.js stuff
+(add-to-list 'load-path "~/.emacs.d")
 ;-------------------------------------------------------------------------------
 ; Load the package manager package.el prior to anything else
 ;-------------------------------------------------------------------------------
@@ -39,6 +41,25 @@
 (require 'cc-mode)
     (add-to-list 'c-mode-common-hook
       (lambda () (setq c-syntactic-indentation nil)))
+
+; More customization
+(require 'cl)
+(require 'ffap)
+(require 'uniquify)
+(require 'ansi-color)
+(require 'recentf)
+(require 'linum)
+(require 'dired-x)
+(require 'compile)
+
+(menu-bar-mode -1)
+(normal-erase-is-backspace-mode 1)
+(put 'downcase-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
+(setq save-abbrevs nil)
+(setq show-trailing-whitespace t)
+(setq suggest-key-bindings t)
+(setq vc-follow-symlinks t)
 ;-------------------------------------------------------------------------------
 ; Interface enhancement
 ;-------------------------------------------------------------------------------
@@ -78,3 +99,12 @@
 (global-set-key "\M-d" 'delete-word)
 (global-set-key "\M-h" 'backward-delete-word)
 (global-set-key "\M-u" 'zap-to-char)
+;-------------------------------------------------------------------------------
+; JS Mode Configuration
+;-------------------------------------------------------------------------------
+;(load "js-config.el")
+;(add-to-list 'load-path "~/.emacs.d/jade-mode") ;; github.com/brianc/jade-mode
+;(require 'sws-mode)
+;(require 'jade-mode)
+;(add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
+;(add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
