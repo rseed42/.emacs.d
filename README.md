@@ -1,8 +1,9 @@
 ================================================================================
 Configuration Notes
 ================================================================================
-Latest update: 2015.08.02
+Latest update: 2017.08.07
 --------------------------------------------------------------------------------
+* Updated the MELPA url to https://stable.melpa.org/packages
 * Using MELPA as a package repository
 * All packages that are to be install are written in packages.checklist
 * Not using locally installed packages

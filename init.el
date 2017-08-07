@@ -13,7 +13,7 @@
 ;(add-to-list 'package-archives
 ;             '("marmalade" . "http://melpa.milkbox.net/packages/") t)
 (add-to-list 'package-archives
-             '("melpa-stable" . "http://stable.melpa.org/packages/") t)
+             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 
 (package-initialize)
 ;-------------------------------------------------------------------------------
