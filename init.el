@@ -10,8 +10,11 @@
 ;-------------------------------------------------------------------------------
 (require 'package)
 (package-initialize)
+;(add-to-list 'package-archives
+;             '("marmalade" . "http://melpa.milkbox.net/packages/") t)
 (add-to-list 'package-archives
-             '("marmalade" . "http://melpa.milkbox.net/packages/") t)
+             '("melpa-stable" . "http://stable.melpa.org/packages/") t)
+
 (package-initialize)
 ;-------------------------------------------------------------------------------
 ; Do not show startup tips in XEmacs
